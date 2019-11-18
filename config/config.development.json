@@ -1,0 +1,7 @@
+{
+    "storage": {
+        "connectionString": "To be replaced on CI/CD",
+        "table": "wns"
+    },
+    "appInsightKey": "To be replaced on CI/CD"
+}
