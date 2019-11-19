@@ -18,8 +18,6 @@ class addressService {
         return new Promise((resolve, reject) => {
             this.tableSvc.retrieveEntity(config.storage.table, asset, name, function (error, result, response) {
                 if (!error) {
-                    var entGen = azure.TableUtilities.entityGenerator;
-                    
                     return resolve({
                         asset: result.PartitionKey._,
                         name: result.RowKey._,
